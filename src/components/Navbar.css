@@ -1,0 +1,11 @@
+.Navbar{
+    @apply p-8 flex justify-between
+}
+
+.Navbar h1{
+    @apply text-3xl font-semibold cursor-pointer
+}
+
+.Navbar button{
+    @apply border-x-black border-x-2 rounded-[1rem] px-2 h-6
+}

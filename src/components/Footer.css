@@ -1,0 +1,111 @@
+.footer {
+    @apply w-full mt-[10rem] bg-black text-white;
+}
+
+.footer__container {
+    @apply w-full max-w-screen-xl mx-auto p-6 grid grid-cols-1 md:grid-cols-12 gap-4;
+}
+
+.left_footer {
+    @apply col-span-12 md:col-span-5 mb-4 md:mb-0; /* Increased col-span for left section on medium screens and above */
+}
+
+.left_footer h3 {
+    @apply font-bold font-sans mb-2 uppercase;
+}
+
+.left_footer ul {
+    @apply list-none;
+}
+
+.left_footer li {
+    @apply text-gray-400 text-sm font-serif mb-2;
+}
+
+.left_footer a {
+    @apply hover:text-white relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.left_footer a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.left_footer a:hover::before {
+    width: 100%;
+}
+
+.right_footer {
+    @apply col-span-12 md:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-4;
+    @apply md:ml-4; 
+    @apply md:mr-4;
+}
+
+.cpy, .new_business, .or_ventures {
+    @apply col-span-1 flex flex-col justify-center;
+    @apply min-w-[200px] md:min-w-[300px];
+}
+
+.cpy h3, .new_business h3, .or_ventures h3 {
+    @apply font-bold text-lg mb-2 uppercase;
+}
+
+.cpy p, .new_business p, .or_ventures p {
+    @apply text-gray-400 text-sm font-serif;
+    @apply overflow-hidden whitespace-nowrap overflow-ellipsis;
+}
+
+.social {
+    @apply col-span-1 md:col-start-1 md:row-start-2;
+}
+.social li{
+    @apply my-2
+}
+
+.sydney {
+    @apply col-span-1 md:col-start-2 md:row-start-2;
+}
+
+.london {
+    @apply col-span-1 md:col-start-3 md:row-start-2;
+}
+
+.right_footer div {
+    @apply mb-4;
+}
+
+.right_footer h3 {
+    @apply font-bold text-lg mb-2 uppercase;
+}
+
+.right_footer p,
+.right_footer li {
+    @apply text-gray-400 text-sm font-serif list-none;
+}
+
+.right_footer a {
+    @apply hover:text-white relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.right_footer a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.right_footer a:hover::before {
+    width: 100%;
+}

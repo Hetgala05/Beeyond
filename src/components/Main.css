@@ -1,0 +1,47 @@
+.brands {
+  @apply h-[40rem] mx-auto mt-[14rem] text-center mb-[-12rem];
+}
+
+.brands h1 {
+  @apply lg:w-[65rem] sm:w-[45rem] text-8xl uppercase font-thin mx-auto tracking-wider;
+}
+
+.brands p {
+  @apply text-9xl uppercase font-serif font-extrabold;
+}
+
+.right_main {
+  @apply ml-[60%] mr-4 flex justify-between tracking-wide font-serif font-thin lg:mt-[2.5rem] sm:mt-[7rem];
+}
+
+.right_main :where(p, pre) {
+  @apply border-x-black border-x-2 rounded-[1rem] px-2 h-6;
+}
+
+.images {
+  @apply ml-[70%] flex justify-around tracking-wide font-serif font-thin relative lg:mt-[1.5rem] sm:mt-[7rem];
+}
+
+.images img {
+  @apply w-[5.3rem] h-[5.3rem];
+}
+
+.hovered-image {
+  @apply fixed top-0 left-0 -translate-x-1/2 h-full w-full max-w-[73rem] z-50;
+}
+
+.bounce {
+  animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

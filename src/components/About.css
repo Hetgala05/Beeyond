@@ -1,0 +1,40 @@
+.about {
+    @apply flex justify-between w-[1100px] mt-[10rem];
+}
+
+.left{
+    @apply mt-[10rem] ml-[5rem];
+}
+
+.image {
+    @apply h-[37rem] w-[28rem] hover:cursor-pointer;
+}
+
+.image_scroll {
+    @apply w-full h-full object-cover; 
+}
+
+.image_scroll_2 {
+    @apply w-full h-full object-cover lg:ml-[60rem] mt-[-4rem] md:ml-[30rem] ; 
+}
+
+.image_scroll_3 {
+    @apply w-full h-full object-cover lg:ml-[25rem] md:ml-[0rem] mt-[-15rem]; 
+}
+
+.image_scroll_4 {
+    @apply w-full h-full object-cover lg:ml-[45rem] md:ml-[25rem] mt-[5rem]; 
+}
+
+.image_scroll_5 {
+    @apply w-full h-full object-cover lg:mt-[-6rem] md:mt-[1rem]; 
+}
+
+.image_scroll_6 {
+    @apply w-full h-full object-cover lg:ml-[55rem] md:ml-[25rem] lg:mt-[-3rem] md:mt-[1rem]; 
+}
+
+.right {
+    @apply w-[45rem] font-sans font-semibold text-6xl text-center tracking-wider mr-[-25rem];
+}
+

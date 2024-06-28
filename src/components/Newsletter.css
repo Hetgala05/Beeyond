@@ -1,0 +1,57 @@
+.newsletter {
+    @apply w-full max-w-[40rem] text-center lg:mt-[170rem] md:mt-[180rem] mx-auto px-4 relative;
+}
+
+.newsletter h3 {
+    @apply uppercase border-x-2 w-[10rem] border-black mx-auto mb-4 rounded-[1rem] font-sans tracking-wide;
+}
+
+.newsletter h1 {
+    @apply font-semibold text-6xl tracking-wider font-serif my-2;
+}
+
+.h1-responsive {
+    @apply text-4xl;
+}
+
+@media (min-width: 768px) {
+    .h1-responsive {
+        @apply text-6xl;
+    }
+}
+
+.signup_btn {
+    @apply relative overflow-hidden border border-black rounded-[5rem] text-sm px-8 py-3 block mx-auto;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.signup_btn span {
+    @apply relative z-10 text-black; /* Initial text color */
+    transition: color 0.3s ease-in-out; /* Smooth transition for text color change */
+}
+
+.signup_btn:hover {
+    background-color: black;
+}
+
+.signup_btn:hover span {
+    @apply text-white; /* Text color change on hover */
+}
+
+.signup_btn::before {
+    content: "";
+    position: absolute;
+    left: calc(var(--x) - var(--distX));
+    top: calc(var(--y) - var(--distY));
+    width: calc(var(--distX) * 2);
+    height: calc(var(--distY) * 2);
+    background-color: black;
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.signup_btn:hover::before {
+    transform: scale(1);
+}
